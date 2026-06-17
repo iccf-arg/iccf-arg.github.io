@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICCF — Links</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0D2E5C;
+    --azul: #4A9ED6;
+    --azul-claro: #B5D4F4;
+    --blanco: #F0EDE8;
+    --dim: rgba(240,237,232,0.5);
+    --borde: rgba(74,158,214,0.2);
+  }
+
+  body {
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', system-ui, sans-serif;
+    padding: 3rem 1.5rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .logo-mark {
+    margin-bottom: 1.25rem;
+  }
+
+  .logo-sigla {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--blanco);
+  }
+
+  .logo-sigla span { color: var(--azul); }
+
+  .logo-sub {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--dim);
+    margin-top: 6px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .link-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255,255,255,0.05);
+    border: 0.5px solid var(--borde);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  }
+
+  .link-card:hover {
+    background: rgba(74,158,214,0.1);
+    border-color: rgba(74,158,214,0.4);
+    transform: translateY(-2px);
+  }
+
+  .link-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .link-content { flex: 1; }
+
+  .link-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+
+  .link-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--blanco);
+  }
+
+  .link-arrow {
+    color: var(--dim);
+    font-size: 16px;
+    transition: color 0.2s;
+  }
+
+  .link-card:hover .link-arrow { color: var(--azul-claro); }
+
+  .divider {
+    width: 100%;
+    max-width: 420px;
+    height: 0.5px;
+    background: var(--borde);
+    margin: 0.5rem 0;
+  }
+
+  .footer {
+    margin-top: 2.5rem;
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 12px;
+    color: var(--dim);
+    letter-spacing: 0.05em;
+  }
+
+  .footer-email {
+    display: block;
+    font-size: 13px;
+    color: var(--azul);
+    text-decoration: none;
+    margin-top: 6px;
+    transition: color 0.2s;
+  }
+
+  .footer-email:hover { color: var(--azul-claro); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-mark">
+    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="48" height="48" rx="10" fill="rgba(74,158,214,0.15)"/>
+      <path d="M 14 8 A 10 10 0 0 1 14 40" stroke="#4A9ED6" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <path d="M 22 5 A 13 13 0 0 1 22 43" stroke="#7EC8E3" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M 30 8 A 10 10 0 0 0 30 40" stroke="#B5D4F4" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <circle cx="22" cy="24" r="4" fill="#4A9ED6"/>
+      <circle cx="22" cy="24" r="2" fill="#0D2E5C"/>
+    </svg>
+  </div>
+  <div class="logo-sigla"><span>I</span>CCF</div>
+  <div class="logo-sub">Instituto de Ciencias Conductuales Funcionales</div>
+</div>
+
+<div class="links">
+
+  <a href="https://iccf-arg.github.io" target="_blank" class="link-card">
+    <div class="link-dot" style="background: #4A9ED6;"></div>
+    <div class="link-content">
+      <div class="link-label" style="color: #4A9ED6;">Instituto</div>
+      <div class="link-name">ICCF — Sitio institucional</div>
+    </div>
+    <span class="link-arrow">↗</span>
+  </a>
+
+  <div class="divider"></div>
+
+  <a href="https://iccf-arg.github.io/comportarte" target="_blank" class="link-card">
+    <div class="link-dot" style="background: #1D9E75;"></div>
+    <div class="link-content">
+      <div class="link-label" style="color: #1D9E75;">Consultoría</div>
+      <div class="link-name">Comportarte Behavioral Group</div>
+    </div>
+    <span class="link-arrow">↗</span>
+  </a>
+
+  <a href="https://flexiumpsi.github.io" target="_blank" class="link-card">
+    <div class="link-dot" style="background: #7A9178;"></div>
+    <div class="link-content">
+      <div class="link-label" style="color: #7A9178;">Talleres</div>
+      <div class="link-name">Flexium — Flexibilidad psicológica</div>
+    </div>
+    <span class="link-arrow">↗</span>
+  </a>
+
+  <a href="https://iccf-arg.github.io/btugender" target="_blank" class="link-card">
+    <div class="link-dot" style="background: #6B5FD4;"></div>
+    <div class="link-content">
+      <div class="link-label" style="color: #AFA9EC;">Publicaciones</div>
+      <div class="link-name">Benjamín Tugender — Autor</div>
+    </div>
+    <span class="link-arrow">↗</span>
+  </a>
+
+  <div class="divider"></div>
+
+  <a href="https://instagram.com/comportartebg" target="_blank" class="link-card">
+    <div class="link-dot" style="background: rgba(240,237,232,0.3);"></div>
+    <div class="link-content">
+      <div class="link-label" style="color: var(--dim);">Instagram</div>
+      <div class="link-name">@comportartebg</div>
+    </div>
+    <span class="link-arrow">↗</span>
+  </a>
+
+  <a href="https://instagram.com/flexium.psi" target="_blank" class="link-card">
+    <div class="link-dot" style="background: rgba(240,237,232,0.3);"></div>
+    <div class="link-content">
+      <div class="link-label" style="color: var(--dim);">Instagram</div>
+      <div class="link-name">@flexium.psi</div>
+    </div>
+    <span class="link-arrow">↗</span>
+  </a>
+
+  <a href="https://instagram.com/benjatugender" target="_blank" class="link-card">
+    <div class="link-dot" style="background: rgba(240,237,232,0.3);"></div>
+    <div class="link-content">
+      <div class="link-label" style="color: var(--dim);">Instagram personal</div>
+      <div class="link-name">@benjatugender</div>
+    </div>
+    <span class="link-arrow">↗</span>
+  </a>
+
+  <a href="https://www.linkedin.com/in/btugender" target="_blank" class="link-card">
+    <div class="link-dot" style="background: #0A66C2;"></div>
+    <div class="link-content">
+      <div class="link-label" style="color: #5B9BD5;">LinkedIn</div>
+      <div class="link-name">Benjamín Tugender</div>
+    </div>
+    <span class="link-arrow">↗</span>
+  </a>
+
+</div>
+
+<div class="footer">
+  <div class="footer-text">Contacto</div>
+  <a href="mailto:iccf.arg@gmail.com" class="footer-email">iccf.arg@gmail.com</a>
+</div>
+
+</body>
+</html>
